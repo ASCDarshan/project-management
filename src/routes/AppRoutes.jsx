@@ -52,6 +52,7 @@ const AppRoutes = () => {
         <Route path="projects">
           <Route index element={<ProjectListPage />} />
           <Route path="new" element={<ProjectCreatePage />} />
+          <Route path="edit/:projectId" element={<ProjectCreatePage />} />
           <Route path=":projectId" element={<ProjectDetailsPage />} />
           {/* Example: /projects/:projectId/edit */}
         </Route>
